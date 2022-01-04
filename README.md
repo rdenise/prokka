@@ -18,7 +18,7 @@ viral genomes quickly and produce standards-compliant output files.
 If you use [Conda](https://conda.io/docs/install/quick.html)
 you can use the [Bioconda channel](https://bioconda.github.io/):
 ```
-conda install -c conda-forge -c bioconda -c defaults prokka
+conda install -c conda-forge -c rdenise -c defaults prokka
 ```
 
 ### Brew
@@ -229,6 +229,7 @@ $HOME/prokka/bin/prokka --setupdb
       --proteins [X]    Fasta file of trusted proteins to first annotate from (default '')
       --hmms [X]        Trusted HMM to first annotate from (default '')
       --metagenome      Improve gene predictions for highly fragmented genomes (default OFF)
+      --partialgenes    Allow genes to run off edges, yielding incomplete genes (no closed ends option in prodigal) (default OFF)      
       --rawproduct      Do not clean up /product annotation (default OFF)
     Computation:
       --fast            Fast mode - skip CDS /product searching (default OFF)
